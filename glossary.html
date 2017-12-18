@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div id="myNav" class="menu-open">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="fs-menu">
+                <li><a href="index.html">Our Team</a></li>
+                <li><a class="current" href="glossary.html">Glossary</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="se.html">SE</a></li>
+                <li><a href="gpinui.html">MGP in UI Design</a></li>
+                <li><a href="validation.html">Validation</a></li>
+            </ul>
+        </div>
+    <nav class= "nav" id="nav">
+        <a href="index.html">
+            <img src="images/logo.png" alt= "Logo" class="logo">
+        </a>
+        <ul class="top-menu">
+                <li><a href="index.html">Our Team</a></li>
+                <li><a class="current" href="glossary.html">Glossary</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="se.html">SE</a></li>
+                <li><a href="gpinui.html">MGP in UI Design</a></li>
+                <li><a href="validation.html">Validation</a></li>
+            </ul>
+            <span class="menu-span" onclick="openNav()">
+                    <img src="images/menu.png" alt="menu icon">
+            </span>
+    </nav>
+    
+<!--Accordion source code: W3Schools - https://www.w3schools.com/howto/howto_js_accordion.asp-->
+<!-- Most terms taken from: http://www.landofcode.com/web-computer-terms-glossary.php -->
+    <h1 class="glossary">Glossary</h1>
+
+    <button class="accordion">A</button>
+    <div class="panel">
+        <h1 class="glossary-title">AJAX</h1>
+        <p class="glossary-description">Stands for Asynchronous JavaScript and XML. AJAX is typically used for creating dynamic web applications and allows for asynchronous data retrieval without having to reload the page a visitor is on. The JavaScript on a given page handles most of the basic functions of the application, making it perform more like a desktop program instead of a web-based one.</p>
+        <h1 class="glossary-title">Anchor</h1>
+        <p class="glossary-description">The part of a webpage where a link begins or ends.</p>
+        <h1 class="glossary-title">Amaya</h1>
+        <p class="glossary-description">An open source web browser and web editor in one! Developed by the W3C.</p>
+        <h1 class="glossary-title">Apache</h1>
+        <p class="glossary-description">A web server developed by the Apache Software Foundation. Apache Web Server is open source. It works with a range of operating systems including Linux, Unix, Solaris, and Windows. </p>
+        <h1 class="glossary-title">API</h1>
+        <p class="glossary-description">Stands for Application Programming Interface. An API contains various routines, protocols, algorithms, and tools used for software development. An API also lets programs communicate with each other, or in the case of the web, web browsers or web servers can communicate with other programs through the use of an API.</p>
+        <h1 class="glossary-title">Authentication</h1>
+        <p class="glossary-description">The process by which a user, program, or computer is verified to be legitimate in various situations such as checking a password.</p>
+        <h1 class="glossary-title">ASCII</h1>
+        <p class="glossary-description">Stands for American Standard Code for Information Interchange. ASCII is a set of codes used to represent various characters including letters, numbers, and special control characters as numbers. Each character is assigned a number from 0 to 127. For example, capital E is assigned the value 45. HTML uses ASCII to transmit data over the web.</p>
+    </div>
+    
+    <button class="accordion">B</button>
+    <div class="panel">
+        <h1 class="glossary-title">Back End</h1>
+        <p class="glossary-description">The back end of a website is the part hidden from view of regular website visitors. The back end generally includes the information structure, applications, and the CMS controlling content on the site.</p>
+        <h1 class="glossary-title">Banner Ad</h1>
+        <p class="glossary-description">An advertisement placed on a webpage which links to the advertiser's website. Banner ads can contain text, graphical images, animation, and sound.</p>
+        <h1 class="glossary-title">BBS</h1>
+        <p class="glossary-description">Stands for Bulletin Board System. A BBS is a web based public electronic system that allow users to dial in with a modem and share discussions, review messages left by other users, and share files.</p>
+        <h1 class="glossary-title">Bookmark</h1>
+        <p class="glossary-description">A stored link to a particular webpage or other web resource such as an image that can later be accessed by a user.</p>
+        <h1 class="glossary-title">Browse</h1>
+        <p class="glossary-description">The process by which a user accessess various web resources.</p>
+        <h1 class="glossary-title">Browser</h1>
+        <p class="glossary-description">A browser is an application program that provides a way to look at and interact with all the information on the World Wide Web. The word "browser" seems to have originated prior to the Web as a generic term for user interfaces that let you browse (navigate through and read) text files online.</p>
+    </div>
+    
+    <button class="accordion">C</button>
+    <div class="panel">
+        <h1 class="glossary-title">Cache</h1>
+        <p class="glossary-description">Pronounced as cash. In web terms, a cache is a storage space where the copies of web pages and other web resources such as images are stored. In general computer terms, a cache is also used for storage where it can be either a section of main memory that is reserved or an independent high-speed storage device.</p>
+        <h1 class="glossary-title">Cascading Style Sheets</h1>
+        <p class="glossary-description">Also referred to simply as CSS, Cascading Style Sheets are used to define the look and feel of a web site outside of the actual HTML file(s) of the site. In recent years, CSS has replaced tables and other HTML-based methods for formatting and laying out websites. The benefits to using CSS are many, but some of the most important are the simplification of a site’s HTML files (which can actually increase search engine rankings) and the ability to completely change the style of a site by changing just one file, without having to make changes to content.</p>
+        <h1 class="glossary-title">CGI</h1>
+        <p class="glossary-description">Stands for Common Gateway Interface. CGI is a mechanism for transferring data between a web server and a CGI program.</p>
+        <h1 class="glossary-title">CGI Program</h1>
+        <p class="glossary-description">Common Gateway Interface program. A CGI program is a program that manages the interaction between web servers and users, as well as handling the input and output from web servers. CGI programs can be written in a variety of languages including Java , Perl, C, and Visual Basic.</p>
+        <h1 class="glossary-title">Clickthrough Rate</h1>
+        <p class="glossary-description">The percentage of times that viewers of a webpage click on an advertisement link. For example, if 15 out of 100 viewers of a webpage click on an advertisement link, the clickthrough rate is 15%.</p>
+        <h1 class="glossary-title">Comment</h1>
+        <p class="glossary-description">In web design terms, a comment is a bit of information contained in a site’s HTML or XHTML files that is ignored by the browser. Comments are used to identify different parts of the file and as reference notes. Good commenting makes it much easier for a designer (whether the original designer or someone else) to make changes to the site, as it keeps it clear which parts of the code perform which functions. There are different comment formats for different programming and markup languages.</p>
+        <h1 class="glossary-title">Compression</h1>
+        <p class="glossary-description">In web terms, compression is reducing the size of web resources such as webpages and images so that they are received and viewed quicker by the user. In general computer terms, compression is reducing the size of data so that it can be stored in a format that takes up less space.</p>
+        <h1 class="glossary-title">Cookie</h1>
+        <p class="glossary-description">A small text file that a web server may store on a user's computer for the purpose of uniquely identifying the user during future visits to the website.</p>
+        <h1 class="glossary-title">ColdFusion</h1>
+        <p class="glossary-description">A web development software tool used to integrate databases and webpages. ColdFusion was originally created by the Allaire Corporation.</p>
+        <h1 class="glossary-title">CSS</h1>
+        <p class="glossary-description">Stands for Cascading Style Sheets. CSS is a language used for declaring stylesheets that describe how the content on webpages will appear. CSS is recommended by the World Wide Web Consortium (W3C) and can be used to define various styles for webpages including font size, font color, spacing between elements, and a background color/image.</p>
+        <h1 class="glossary-title">CSS Framework</h1>
+        <p class="glossary-description">A CSS framework is a collection of CSS files used as the starting point to make XHTML and CSS web sites quickly and painlessly. They usually contain CSS styles for typography and layout.</p>
+    </div>
+
+    <button class="accordion">D</button>
+    <div class="panel">
+        <h1 class="glossary-title">Database</h1>
+        <p class="glossary-description">A collection of data stored in a computer in such a way that a program or a webpage can easily find, select, and/or manipulate the desired data. Typically, databases are organized by fields, records and files. A field is one piece of data, a record is a collection of fields, and a file is a collection of records.</p>
+        <h1 class="glossary-title">Domain Name</h1>
+        <p class="glossary-description">The name used to identify a website. For example, www.yahoo.com</p>
+    </div>
+
+    <button class="accordion">E</button>
+    <div class="panel">
+        <h1 class="glossary-title">Elastic Layout</h1>
+        <p class="glossary-description">An elastic layout is one that uses percentages and ems for widths paired with a max-width style to allow the site layout to stretch when font sizes are changed. It’s ability to flex to accommodate the browser width and reader’s font preferences are where it gets its name.</p>
+        <h1 class="glossary-title">Embedded Style</h1>
+        <p class="glossary-description">An embedded style is a CSS style written into the head of an XHTML document. It only effects the elements on that page, instead of site-wide as a separate CSS file does. Style in an embedded style sheet will override styles from the linked CSS file.</p>        
+        <h1 class="glossary-title">E-mail</h1>
+        <p class="glossary-description">Abbreviation for Electronic Mail. E-mail refers to electronic messages that are sent over communications networks on the internet. E-mail is sent and retrieved with various protocols including SMTP, POP3, and IMAP.</p>
+    </div>
+    
+    <button class="accordion">F</button>
+    <div class="panel">
+        <h1 class="glossary-title">Frame</h1>
+        <p class="glossary-description">In web terms, a frame is a part of the browsers display area which actually contains a different web page. In general computer terms, a frame is a rectangular area which can contain graphical components such as buttons and textboxes, as well as images and text.</p>
+        <h1 class="glossary-title">FrontPage</h1>
+        <p class="glossary-description">A software tool used for web development. FrontPage was originally created by Vermeer Technologies Inc. The company was later bought by Microsoft, at which point Frontpage became Microsoft Frontpage.</p>
+    </div>
+    
+    <button class="accordion">G</button>
+    <div class="panel">
+        <h1 class="glossary-title">GIF</h1>
+        <p class="glossary-description">Stands for Graphics Interchange Format. GIF is a graphics format developed by CompuServe used for storing compressed image files. The GIF format is one of the most common image formats on the internet.</p>
+        <h1 class="glossary-title">Graphical User Interface</h1>
+        <p class="glossary-description">Also referred to by its acronym: GUI. A graphical user interface uses an input device (like the mouse) and visual representations of how the user is able to interact with a web application. In other words, it’s all the front-end stuff you see on a web application. It’s purpose is to allow you to interact with a web application without having to enter code.</p>
+
+    </div>
+    
+    <button class="accordion">H</button>
+    <div class="panel">
+        <h1 class="glossary-title">Home Page</h1>
+        <p class="glossary-description">The root (main) page of a web site. The page that is displayed by default when a web site is visited. For example, when you enter www.landofcode.com into your web browser and visit this website, the page that is displayed by default is index.html</p>
+        <h1 class="glossary-title">Hosting</h1>
+        <p class="glossary-description">The process of providing services by which data will be stored on a network device. Users that want to access such data can then request it from the host. For example, through web hosting individuals or organizations can store the contents of their websites on network devices which can be accessed by various users who request it.</p>
+        <h1 class="glossary-title">HTML</h1>
+        <p class="glossary-description">Stands for Hyper Text Markup Language. HTML is a markup language that is the core language of the world wide web. HTML defines the structure of a web document as well as the layout of text and various elements on it such as buttons and images.</p>
+        <h1 class="glossary-title">HTML Document</h1>
+        <p class="glossary-description">A document that is written in HTML. HTML document is synonomous with HTML page.</p>
+        <h1 class="glossary-title">HTML Editor</h1>
+        <p class="glossary-description">A software tool used for editing the content of webpages. HTML editors present the page being edited exactly the way it will be displayed in a web browser.</p>
+        <h1 class="glossary-title">HTML Form</h1>
+        <p class="glossary-description">A form on a webpage filled out by the user that sends data to the web server.</p>
+        <h1 class="glossary-title">HTML Page</h1>
+        <p class="glossary-description">A document that is written in HTML. HTML page is synonomous with HTML document.</p>
+        <h1 class="glossary-title">HTML Tags</h1>
+        <p class="glossary-description">Pieces of code that are used to identify and structure different parts of an HTML document. Because of HTML tags, a web browser knows how to display an HTML document.</p>
+        <h1 class="glossary-title">Hyperlink</h1>
+        <p class="glossary-description">A link on a webpage to another web document, usually a webpage, but can also be an image, a sound, or any other web resource. Hyperlink is synonomous with Link and Hotlink.</p>
+        <h1 class="glossary-title">Hypermedia</h1>
+        <p class="glossary-description">An extension to hypertext which includes graphics, audio, and video.</p>
+        <h1 class="glossary-title">Hypertext</h1>
+        <p class="glossary-description">Text that is linked to other documents in a way that makes it pssobile for readers to read related documents by clicking on a highlighted word or symbol.</p>
+    </div>
+    
+    <button class="accordion">I</button>
+    <div class="panel">
+        <h1 class="glossary-title">Inheritance</h1>
+        <p class="glossary-description">In CSS, elements that don’t have a pre-defined style will take on the style of their parent element within the document tree.</p>
+        <h1 class="glossary-title">Internet Explorer</h1>
+        <p class="glossary-description">A web browser originally developed by SpyGlass inc. and later purchased by Microsoft. Internet Explorer is currently the most popular web browser.</p>
+    </div>
+    
+    <button class="accordion">J</button>
+    <div class="panel">
+        <h1 class="glossary-title">Java</h1>
+        <p class="glossary-description">A high level, object-oriented, platform independent programming language developed by Sun Microsystems. Java can be used to write applications as well as applets that run in web pages.</p>
+        <h1 class="glossary-title">JavaScript</h1>
+        <p class="glossary-description">An object-oriented high level language used for web development. Javascript was originally created by Netscape. Javascript can be used to interact with the user as well as create dynamic content such as moving images and clocks.</p>
+    </div>
+    
+    <button class="accordion">K</button>
+    <div class="panel">
+        <h1 class="glossary-title">Keyword</h1>
+        <p class="glossary-description">In the world wide web, a keyword is a word used by search engines to search for relevant information. In databases, a keyword is an entry used to specify a particular record. In programming, a keyword is a special word that is reserved by a particular language for some usage.</p>
+    </div>
+    
+    <button class="accordion">L</button>
+    <div class="panel">
+        <h1 class="glossary-title">Link</h1>
+        <p class="glossary-description">In general programming, the execution of a linker. In spreadsheet software, when two or more files are linked by common cells. In telecommunications, a path for data transmission. In data management systems, a pointer to another record. In some operating systems such as unix, a pointer to a file which makes it possible to access the file without specifying the files full path. In the world wide web, the same as hyperlink.</p>
+        <h1 class="glossary-title">Liquid Layout</h1>
+        <p class="glossary-description">A liquid layout is one that is based on percentages of the browser window’s size. The layout of the site will change with the width of the browser, even if the visitor changes their browser size while viewing the page. Liquid layouts take full advantage of a person’s browser width, optimizing the amount of content you can fit onscreen at one time.</p>
+
+    </div>
+    
+    <button class="accordion">M</button>
+    <div class="panel">
+        <h1 class="glossary-title">Meta Tags</h1>
+        <p class="glossary-description">Special HTML tags used to describe a webpage in some way. Meta tags can be used to specify the author of a webpage, the software used to create the webpage, the content of the webpage, and more.</p>
+        <h1 class="glossary-title">Modern</h1>
+        <p class="glossary-description">An abbreviation for modulator-demodulator. A modem is a piece of computer hardware (could be internal or external) used to send data through telephone or cable lines. While data on a computer is stored digitally, data on telephone and cable lines is stored in an analog form. Other than sending data, it is the modem's job to convert between digital and analog data. This is how modem gets its name - it modulates a digital signal into an analog signal, and then demodulates an analog signal into a digital signal.</p>
+        <h1 class="glossary-title">Mosaic</h1>
+        <p class="glossary-description">A web browser released in 1993 by the NCSA. Mosaic became the first commonly available web browser.</p>
+        <h1 class="glossary-title">Multimedia</h1>
+        <p class="glossary-description">The integration of text, graphics, video, animation, and/or sound in a presentable way.</p>
+    </div>
+    
+    <button class="accordion">N</button>
+    <div class="panel">
+        <h1 class="glossary-title">Navigation</h1>
+        <p class="glossary-description">Navigation refers to the system that allows visitors to a website to move around that site. Navigation is most often thought of in terms of menus, but links within pages, breadcrumbs, related links, pagination, and any other links that allow a visitor to move from one page to another are included in navigation.</p>
+        <h1 class="glossary-title">Netscape</h1>
+        <p class="glossary-description">A web browser developed by Netscape Communications. For some time, Netscape was the most popular web browser. As of now, Internet Explorer is the most popular web browser.</p>
+    </div>
+    
+    <button class="accordion">O</button>
+    <div class="panel">
+        <h1 class="glossary-title">Open Source</h1>
+        <p class="glossary-description">Open source refers to the source code of a computer program being made available to the general public. Open source software includes both web-based and desktop applications. Open source programs are generally free or very low cost and are developed by teams of people, sometimes comprised mostly of volunteers.</p>
+        <h1 class="glossary-title">Opera</h1>
+        <p class="glossary-description">A web browser developed by the company Opera. Opera is available for various operating systems including Windows, Linux, and Mac.</p>
+    </div>
+    
+    <button class="accordion">P</button>
+    <div class="panel">
+            <h1 class="glossary-title">Page Hits</h1>
+            <p class="glossary-description">When ever a user views a resource from a web server such as an image or a webpage. Since a page hit is the viewing of any web resource, usually there is more than one page hit at once. For example, if a user views a webpage with 4 images and 1 sound, that is 6 page hits. The webpage itself is one page hit, the images are four page hits, and the sound is one page hit.</p>
+            <h1 class="glossary-title">Page Impressions</h1>
+            <p class="glossary-description">The viewing of an advertisement on a webpage. For example, if you view a webpage with two ads, thats two page impressions.</p>
+            <h1 class="glossary-title">Page Views</h1>
+            <p class="glossary-description">When a webpage is viewed by a user.</p>
+            <h1 class="glossary-title">Platform</h1>
+            <p class="glossary-description">The central hardware and/or software of a computer. For example, the software platform of the average PC is Windows, while its hardware platform is Intel X86. In web terms, platform refers only to the central software of a computer ( its operating system ), such as Windows, Linux, or Mac. The term platform is sometimes used synonomously with operating system.</p>
+    </div>
+    
+    <button class="accordion">Q</button>
+    <div class="panel">
+            
+            
+    </div>
+    
+    <button class="accordion">R</button>
+    <div class="panel">
+        <h1 class="glossary-title">RDF</h1>
+        <p class="glossary-description">Stands for Resource Description Framework. RDF is a framework for describing the information contained in various web resources. RDF describes information such as when updates were made and keywords used by search engines to find various web pages.</p>
+        <h1 class="glossary-title">Redirect</h1>
+        <p class="glossary-description">In web terms, a redirect is when a web page automatically sends the user to another web page. In general computer usage, a redirect is the process by which output on the command line is sent to a particular place such as a text file. In e-mail, a redirect is similar to a forward, the difference being when you redirect an e-mail to someone it will show the original senders e-mail address as well as your e-mail address in parentheses. For example, if you receive an e-mail from someone@adomain.com, your e-mail address is someone@anotherdomain.com, and you redirect the e-mail to the e-mail address thirdperson@email.com, the sender field will read something like From: someone@adomain.com (sent by your name).</p>
+        <h1 class="glossary-title">Responsive Design</h1>
+        <p class="glossary-description">Increasingly, high-quality websites implement what’s called responsive design, which utilizes fluid grids, flexible images, and media queries to embrace the ebb and flow of the web so that your website is optimized no matter what device a visitor is using. If a user needs to spend a few seconds resizing, scrolling, or otherwise fiddling with your website, his or her patience may get tapped out. You might also see it abbreviated as RWD (Responsive Web Design).</p>
+        <h1 class="glossary-title">RGB</h1>
+        <p class="glossary-description">Stands for Red Green Blue. RGB is an acronym for the three primary colors that when mixed in various ways produce the entire color spectrum.</p>
+    </div>
+    
+    <button class="accordion">S</button>
+    <div class="panel">
+        <h1 class="glossary-title">Script</h1>
+        <p class="glossary-description">A list of statements that are executed without user interaction. Scripts are written using scripting languages such as Javascript and VBScript.</p>
+        <h1 class="glossary-title">Shockwave</h1>
+        <p class="glossary-description">A technology created by Macromedia, Inc. for including multimedia in web pages.</p>
+        <h1 class="glossary-title">SVG</h1>
+        <p class="glossary-description">Stands for Scalable Vector Graphics. SVG is a file format for vector graphics which allows images to be displayed in XML pages. These images are created through the use of text based commands that are formatted to comply with XML specifications. SVG images are scalable to the size of the window in which a web page is viewed and will adjust in size and resolution based on the window in which they are displayed, unlike JPEG and GIF images which always remain a specific size. Other benefits of SVG include being a smaller file size than JPEG and GIF image files, being resolution independent - so an SVG image can scale up or down on any type of web device, accordingly, being able to link to parts of an image, and containing complex animation.</p>
+    </div>
+    
+    <button class="accordion">T</button>
+    <div class="panel">
+            <h1 class="glossary-title">Tag</h1>
+            <p class="glossary-description">A command placed in a web document that specifies the structure and formatting of the document.</p>
+            <h1 class="glossary-title">Template</h1>
+            <p class="glossary-description">A template is a file used to create a consistent design across a website. Templates are often used in conjunction with a CMS and contain both structural information about how a site should be set up, but also stylistic information about how the site should look.</p>
+    </div>
+    
+    <button class="accordion">U</button>
+    <div class="panel">
+            <h1 class="glossary-title">URL</h1>
+            <p class="glossary-description">Stands for Uniform Resource Locator. A URL is an address containing three parts that points to resources on the internet. The first part of a URL specifies the protocol to use. The second part of a URL specifies the domain or IP address where the resource is located. The third part of a URL specifies the location of the file. For example, the URL http://www.landofcode.com/view/about.html points to a resource which is an HTML file, particulary the file about.html. The first part of the URL specifies to use the HTTP protocol to get this resource. The second part of the URL specifies that the domain where this resource is located is www.landofcode.com. The third part of the URL specifies that this resource is located in the /view directory.</p>
+            <h1 class="glossary-title">USENET</h1>
+            <p class="glossary-description">A global news system that contains more than 14,000 forums called newsgroups covering a vast amount of information. USENET can be accessed through the internet and is used by millions of people daily.</p>
+            <h1 class="glossary-title">User-Agent</h1>
+            <p class="glossary-description">A string of text that identifies the web browser and operating system used by a user. The user-agent string is sent by the web browser the user is using.
+                    
+                    Your user-agent string is Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36.</p>
+    </div>
+    
+    <button class="accordion">V</button>
+    <div class="panel">
+        <h1 class="glossary-title">Valid</h1>
+        <p class="glossary-description">Valid web pages are those that return no errors based on the type of HTML/XHTML specified in the doctype declaration at the beginning of the file. In other words, the code used on the page conforms to the specifications for that version of HTML/XHTML. This can be checked through various validation services, most commonly the one from W3C.</p>
+        <h1 class="glossary-title">Visit</h1>
+        <p class="glossary-description">Time spent at a website</p>
+        <h1 class="glossary-title">Visitor</h1>
+        <p class="glossary-description">Someone who comes to a website</p>
+    </div>
+    
+    <button class="accordion">W</button>
+    <div class="panel">
+            <h1 class="glossary-title">W3C</h1>
+            <p class="glossary-description">Stands for World Wide Web Consortium. The W3C develops and maintains standards for the world wide web.</p>
+            <h1 class="glossary-title">Web Browser</h1>
+            <p class="glossary-description">A web client used to display web pages and other web resources. Some web browsers include Mozilla Firefox, Netscape, Opera , and Internet Explorer.</p>
+            <h1 class="glossary-title">Web Page</h1>
+            <p class="glossary-description">A document that is part of a website that is distributed to users requesting it over the world wide web.</p>
+            <h1 class="glossary-title">Web Site</h1>
+            <p class="glossary-description">A location on the world wide web containing a top level domain extension such as.com,.net..org,.info. Web sites contain a set of related web pages and other web resources that collectively make up the website. Websites are owned and managed by various individuals, companies, and organizations.</p>
+            <h1 class="glossary-title">World Wide Web</h1>
+            <p class="glossary-description">A subset of the internet that uses mostly the HTTP (as well as HTTPS) protocols to transfer web documents to users across the internet.</p>
+    </div>
+    
+    <button class="accordion">X</button>
+    <div class="panel">
+            <h1 class="glossary-title">XHTML</h1>
+            <p class="glossary-description">Stands for Extensible Hyper Text Markup Language. XHTML is the next step in the evolution of HTML. It's syntax is stricter and more verbose.</p>
+            <h1 class="glossary-title">XSL</h1>
+            <p class="glossary-description">Stands for Extensible Stylesheet Language. XSL is a standard developed by the W3C used to specify styles for various elements on a webpage, and is the second such standard. The first being CSS. XSL has two advantages over CSS - it allows developers to specify how web pages are printed, and transfer XML documents across different applications. The first draft of XSL was released in August 1998.</p>    
+    </div>
+    
+    <button class="accordion">Y</button>
+    <div class="panel">
+            
+        
+    </div>
+    
+    <button class="accordion">Z</button>
+    <div class="panel">
+            <h1 class="glossary-title">ZIP</h1>
+            <p class="glossary-description">A popular file compression format. Files that are compressed with the ZIP format have a.zip extension and are called ZIP files. Such files are said to be ZIPPED, while files that are decompressed from the ZIP format are said to be UNZIPPED. ZIP files are often offered for download over the internet, as this makes downloading faster for the user as well as makes the bandwidth usage of a web server more economical. Once downloaded, the ZIP file can be UNZIPPED by the user.</p>
+    </div>
+    
+    
+    <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/Henrique.correia.mendes">
+                    <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                </a>
+                <a href="https://twitter.com/Joao_Henrique_M?lang=pt">
+                    <i class="fa fa-twitter" style="font-size:36px"></i>
+                </a>
+                <a href="https://www.instagram.com/henrique_mendes21/">
+                    <i class="fa fa-instagram" style="font-size:36px"></i>
+                </a>
+                <a href="https://plus.google.com/u/0/108489325961645371056">
+                    <i class="fa fa-google" style="font-size:36px"></i>
+                </a>
+                <a href="https://br.pinterest.com/j_henrique_21/">
+                    <i class="fa fa-pinterest" style="font-size:36px"></i>
+                </a>
+            </div>
+            <label>© Copyright 2017 All rights reserved</label>
+        </footer>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">
+                <a  href="#nav">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </button>
+
+            <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+</body>
+</html>

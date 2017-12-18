@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="myNav" class="menu-open">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="fs-menu">
+            <li><a href="index.html">Our Team</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a class="current" href="se.html">SE</a></li>
+            <li><a href="gpinui.html">MGP in UI Design</a></li>
+            <li><a href="validation.html">Validation</a></li>
+        </ul>
+    </div>
+    <nav class= "nav" id="nav">
+        <a href="index.html">
+            <img src="images/logo.png" alt= "Logo" class="logo">
+        </a>
+        <ul class="top-menu">
+            <li><a href="index.html">Our Team</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a class="current" href="se.html">SE</a></li>
+            <li><a href="gpinui.html">MGP in UI Design</a></li>
+            <li><a href="validation.html">Validation</a></li>
+        </ul>
+        <span class="menu-span" onclick="openNav()">
+            <img src="images/menu.png" alt="menu icon">
+        </span>
+    </nav>
+
+    <section class="SE-header">
+        <div class="SE-header-title-container">
+        <h1 class="SE-header-title">Software Engineering</h1></div>
+        <div class="SE-header-video">
+            <iframe class="SE-header-frame" src="https://www.youtube.com/embed/5kas2jBObUY"></iframe>
+        </div>
+        <div class="SE-description-container">
+            <p>In this video, a software engineer vaguely explains how is her work. Software engineers don’t usually work alone, most of the times they collaborate with other people like designers. In her case, she normally spends most of her day coding and debugging, and has some reunions with the team so they can talk about what they are doing and future ideas.</p>
+                    <p>Below, there is a podcast from a Software Development Manager who discusses opportunities of an engineer. Listening to it will give us a better idea of what is it.
+                    </p>
+        </div>
+        <iframe class="soundcloud-embed" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/327669670&amp;color=%232d71b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>                
+    </section>
+
+    <section class="SE-examples">
+            <div class="SE-column-wrapper">
+                <div class="SE-column">
+                    <div class="SE-header-title-container">
+                        <h1 class="SE-header-title">Software Examples</h1>
+                    </div>
+                    <img class="SE-SE" src="images/SE-SE-opt.jpg" alt="SE Software Examples"> <!--Picture taken from: https://br.pinterest.com/pin/684476843337668073/ -->
+                </div>
+            
+                <div class="SE-column">
+                    <div class="SE-header-title-container">
+                        <h1 class="SE-header-title">Software Salaries</h1>
+                    </div>
+                    <img class="SE-SS" src="images/SE-SS-opt.jpg" alt="SE Software Sallaries"> <!--Picture taken from: https://br.pinterest.com/pin/344736546463322676/ -->
+                    <div class="SE-description-container">
+                        <p>In the first image we can see 100 useful software for students. All these software’s were made by software engineers. As we can see, our lives are much easier with the help of these programs. That’s basically what a software engineer do, they create programs to make our every day tasks much easier. Every student had to write at least one report for school. What they normally do, is to use Microsoft Word, which is not free but comes by default in most computers, and we don’t even think about it, but it was engineers who developed it. IBM is a company that developed a lot of good software’s for analysis and management. It was a huge step for banking and market since the beginning of technology.</p>
+                        <p>In the second image, it is shown the average base salary in the best well paid companies in the world. Juniper is the leading one paying $159,990 per month. This shows how well a software engineer is paid and how important they are nowadays. It is obvious that not every software engineer earns that much, but if you can climb the ladder, you will get a lot.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/Henrique.correia.mendes">
+                <i class="fa fa-facebook-square" style="font-size:36px"></i>
+            </a>
+            <a href="https://twitter.com/Joao_Henrique_M?lang=pt">
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+            </a>
+            <a href="https://www.instagram.com/henrique_mendes21/">
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+            </a>
+            <a href="https://plus.google.com/u/0/108489325961645371056">
+                <i class="fa fa-google" style="font-size:36px"></i>
+            </a>
+            <a href="https://br.pinterest.com/j_henrique_21/">
+                <i class="fa fa-pinterest" style="font-size:36px"></i>
+            </a>
+        </div>
+        <label>© Copyright 2017 All rights reserved</label>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+            <a  href="#nav">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </button>
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
