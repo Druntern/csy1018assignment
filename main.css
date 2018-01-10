@@ -1,0 +1,1108 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of CSS Reset */
+
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    background-color: rgb(216, 216, 216);
+  }
+
+/*Top menu bar*/
+.nav {
+    padding-left: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0;
+    padding-right: 1em;
+    background-color: rgb(201, 201, 201);
+    border-bottom: 1px solid #2D71B8;
+    position: relative;
+}
+
+/*Logo in menu bar*/
+nav .logo {
+    float: left;
+    display:block;
+    width: 5em;
+    padding-bottom: 0.3em;
+}
+
+span {
+    width:1.4em;
+    float: right;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+/*Overlay menu*/
+.menu-open {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.fs-menu {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*Overlay menu items*/
+.menu-open li {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #2D71B8;
+    display: block;
+    transition: 0.3s;
+}
+
+/*Overlay menu close button. Taken from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+.menu-open .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    border-bottom: none;
+    color: #2D71B8;
+    text-decoration: none;
+}
+
+.closebtn:hover {
+    color: rgb(105, 105, 105);
+}
+
+ul.top-menu li {
+    float: left;
+    list-style-type: none;
+    font-size: 1em;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #2D71B8;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+ul.fs-menu li a:hover {
+    border-bottom: none;
+}
+
+ul.top-menu li:first-child {
+    padding-left: 0;
+}
+ul.top-menu li:last-child {
+    border-right:none;
+    padding-right: 0px;
+}
+ ul.top-menu {
+     float:right;
+ }
+li a {
+    text-decoration: none;
+    color: #2D71B8;
+    padding-bottom: 23px;
+}
+
+li a:hover {
+    border-bottom: 3px solid #2D71B8;
+    color: rgb(105, 105, 105)
+}
+
+.current {
+    color: #333
+}
+
+@media (max-width: 970px) {
+    ul.top-menu li {
+        display: none;
+    }
+    .menu-span {
+        display: block;
+    }
+}
+
+@media (min-width: 970px) {
+    ul.top-menu li {
+        display: block;
+    }
+
+    .menu-span {
+        display:none;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px){
+
+    div.meettheteam {
+        margin-top:40px;
+    }
+    .bio {
+        display:flex;
+        flex-direction: column;
+    }
+
+    div.bio-element {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .bio-overlay {
+        width: 100%;
+    }
+
+    #pic3 {
+        order:-3;
+    }
+
+    #pic2 {
+        order:-2;
+    }
+
+    .scroll1 {
+        display: none;
+    }
+
+    .bg {
+        margin-bottom:30px;
+    }
+}
+
+/*Biographies*/
+.bio {
+    width: 100%;
+    height: 100%;
+}
+
+/*Each bio attributes*/
+.bio-element {
+    float: left;
+    text-align: center;
+    width:33.33%;
+    position: relative;
+}
+
+.bio-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Text that appears when hovering*/
+.bio-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2D71B8;
+}
+
+.bio-element:hover .bio-overlay {
+    opacity: 1;
+ }
+
+.bio-title {
+    color: rgb(194, 194, 194);
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+ }
+
+.bio-text {
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+    line-height: 100%;
+}
+
+/*Contact me button that forwards to mail*/
+.contact-me {
+    background-color: rgb(194, 194, 194);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: #2D71B8;
+    font-size: 36px;
+}
+
+.contact-me:hover {
+    background-color: rgb(150,150,150);
+}
+
+@media (max-width: 1100px) {
+    .bio-text {
+        font-size: 14px;
+    }
+
+    .contact-me {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contact-me a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 850px) {
+    .bio-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 769px) {
+    .bio-text {
+        font-size: 20px;
+    }
+}
+
+#ourteam-middle {
+    margin-top:-40px;
+}
+
+.meettheteam {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:right;
+}
+
+.meettext {
+    color: #2D71B8;
+    font-size: 1.5em;
+}
+
+.underline {
+    background-color: rgb(201, 201, 201);
+    padding:1px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/*Arrow size that slides to the video*/
+.arrow {
+    width: auto;
+}
+
+/*Both scrolls are the objects that actually scroll to the video*/
+.scroll1 {
+    bottom: 50px;
+    position:relative;
+}
+
+.scroll2 {
+    position:relative;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+iframe {
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom:70px;
+}
+
+.video {
+    margin:0;
+}
+
+@media (max-width:1280px) {
+
+    .video {
+        width: auto;
+        height: auto;
+    }
+    iframe {
+        height: 50vh;
+        
+    }
+}
+
+.footer {
+    padding: 2.3%;
+    border-top: 2px solid #333;
+    background: #2D71B8;
+    text-align: center;
+    
+}
+
+.social-media {
+    height: 40px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a i:hover {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+label {
+    font-size: 0.5em;
+    color: black;
+}
+
+/* Code from W3Schools for accordion*/
+button.accordion {
+    background-color: rgb(194, 194, 194);
+    color: #2D71B8;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: rgb(216, 216, 216);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #2D71B8;
+    text-align: left;
+    font-size: 16px;
+}
+
+/*End of code*/
+
+/*Glossary body*/
+.glossary {
+    background-color: #2D71B8;
+    color: rgb(194, 194, 194);
+    font-size: 36px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.glossary-title {
+    font-size: 20px;
+}
+
+.glossary-description {
+padding-bottom: 10px;
+}
+
+.glossary-description:last-child {
+    padding-bottom: 0;
+}
+
+/*Background for jobs page*/
+.jobs-bg {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    transform: scale(1.03);
+}
+
+/*Take the borders of the picture so we can't see the blur around*/
+.jobs-bg-div {
+    overflow: hidden;
+    z-index: -1;
+}
+
+.jobs-title {
+    position: absolute;
+    top: 430px;
+    z-index: 1;
+    width: 100%;
+}
+
+.jobs-title-in {
+    border: 3px solid white;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+/*Another scroll*/
+.jobs-click {
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+    left: 55.7%;
+}
+
+.jobs-click-container {
+    border: 3px solid white;
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+}
+
+.scroll3 {
+    font-size: 24px;
+    color: white;
+}
+
+@media (max-width:1280px) {
+    .jobs-title {
+        top:300px;
+    }
+
+    .jobs-title-in {
+        font-size: 2em;
+    }
+
+    .jobs-click {
+        top: 370px;
+        left: 40%;
+    }
+
+    .jobs-click-in {
+        font-size: 70%;
+    }
+
+    .jobs-click-container {
+        padding: 7px;
+    }
+
+    .scroll3 {
+        font-size: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    .jobs-title {
+        top:200px;
+    }
+
+    .jobs-title-in {
+        font-size: 1.5em;
+    }
+
+    .jobs-click {
+        top:250px;
+        left: 57%;
+    }
+
+    .jobs-click-in {
+        font-size: 50%;
+    }
+
+    .jobs-click-container {
+        padding: 2px;
+    }
+
+    .scroll3 {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .jobs-title {
+        top: 150px;
+    }
+    .jobs-click {
+        top: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .jobs-title {
+        top: 100px;
+    }
+    .jobs-click {
+        top:140px;
+    }
+    .jobs-title-in {
+        font-size: 1em;
+    }
+    .jobs-click-in {
+        font-size: 0.3em;
+    }
+    .jobs-click-container {
+        padding: 0;
+    }
+}
+
+/*Essay format*/
+.jobs-essay-content {
+    background: rgb(194, 194, 194);
+    padding: 0 40px;
+    margin: 0 80px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.jobs-essay-title {
+margin-top: 40px;
+margin-bottom: 40px;
+font-size: 1.5em;
+}
+
+.jobs-essay {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.jobs-essay p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/*Flex boxes for job comparison*/
+.column-wrapper {
+    display: flex;
+    margin: 0 80px;
+    margin-bottom: 25px;
+    background-color: rgb(194, 194, 194);
+}
+
+.column {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.column h1 {
+    margin-bottom: 20px;
+}
+
+.column li {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width:1280px) {
+    .jobs-essay-title {
+        font-size: 1em;
+    }
+
+    .jobs-essay {
+        font-size: 16px;
+    }
+
+    .jobs-essay p {
+        line-height: 95%;
+    }
+
+    div.column h1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .jobs-essay-title {
+        font-size: 0.8em;
+    }
+
+    .jobs-essay {
+        font-size: 14px;
+    }
+
+    .jobs-essay-content {
+        margin: 0 60px;
+        margin-bottom: 10px;
+    }
+
+    .jobs-essay p {
+        line-height: 90%;
+    }
+
+    div.column-wrapper {
+        margin: 0 60px;
+        margin-bottom: 10px;
+    }
+
+    div.column h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-essay-title {
+        font-size: 0.7em;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .jobs-essay {
+        font-size: 12px;
+    }
+
+    .jobs-essay-content {
+        margin: 0;
+        margin-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .jobs-essay p {
+        line-height: 1em;
+    }
+
+    div.column-wrapper {
+        margin: 0;
+    }
+
+    div.column-wrapper {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .column {
+        margin-bottom: 10px;
+    }
+}
+
+.SE-header-title {
+    font-size: 36px;
+    text-align: left;
+    color: rgb(216, 216, 216);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+iframe.SE-header-frame {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+.SE-header-title-container {
+    background-color: #2D71B8;
+}
+
+.SE-description-container {
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    background-color: rgb(194, 194, 194);
+}
+
+div.SE-description-container p {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+@media (max-width:768px) {
+    .SE-header-title {
+        font-size: 24px;
+        text-align: left;
+        color: rgb(216, 216, 216);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+    }
+
+    .SE-description-container {
+        margin-top: 0;
+        margin-bottom: 2px; 
+    }
+    
+    div.SE-description-container p {
+        padding-top: 5px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 5px;
+        font-size: 50%;
+        line-height: 1em;
+    }
+}
+
+/*Audio embed*/
+.soundcloud-embed {
+    width: 100%;
+    height:20%;
+}
+
+iframe.soundcloud-embed {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+/*Flex boxes for images for laptop/phone view*/
+.SE-column-wrapper {
+    display: flex;
+}
+
+.SE-column {
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    .SE-column-wrapper {
+        flex-direction: column;
+    }
+
+    .SE-column {
+        width: 100%;
+    }
+}
+
+.Subtitle {
+    text-align: left;
+    margin-top: 10px;
+    display:flex;
+    color: #2D71B8;
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.subtitle-bar {
+    width: 100px;
+}
+
+.subtitle-overlay {
+    width: 150px;
+}
+
+.subtitle-hero {
+    width: 130px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #2D71B8;
+    margin-bottom: 10px;
+}
+
+/*Picture containers for comparison*/
+.samsung-bar-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.menu-bar-sam {
+    width: 250%;
+    margin-left: -35%;
+    border: 1px solid black;
+}
+
+.my-bar-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.menu-bar-my {
+    width: 250%;
+    margin-left: -140%;
+    border: 1px solid black;
+}
+
+.description {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgb(201, 201, 201);
+    margin-bottom: 5px;
+}
+
+.MGP-text {
+    background-color: rgb(194, 194, 194);
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.MGP-text p {
+    margin-bottom: 5px;
+}
+
+.MGPinUIContainer {
+    background-color: rgb(194, 194, 194);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+
+    .Subtitle {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display:flex;
+        color: #2D71B8;
+        margin-left: 25px;
+        margin-right: 15px;
+        font-size: 24px;
+    }
+
+    #subtitle-menu-html {
+        margin-bottom: 0;
+    }
+
+    #subtitle-menu-css {
+        margin-bottom: 0;
+    }
+
+    .subtitle-bar {
+        width: 130px;
+    }
+    
+    .subtitle-overlay {
+        width: 190px;
+    }
+    
+    .subtitle-hero {
+        width: 175px;
+    }
+    
+    .line {
+        width: 100%;
+        height: 1px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #2D71B8;
+        margin-bottom: 10px;
+    }
+
+    .menu-bar-sam {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu-bar-my {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: left;
+        padding-left: 20px;
+        background-color: rgb(194, 194, 194);
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .MGP-text {
+        background-color: rgb(194, 194, 194);
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .MGP-text p {
+        margin-bottom: 15px;
+    }
+
+    .MGPinUI-flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.scans {
+    display: flex;
+    margin: auto;
+}
+
+.reflection-text {
+    text-align: justify;
+    background-color: rgb(194, 194, 194);
+    font-size: 24px;
+    margin: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.reflection-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sketches-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sketch-element {
+    float: left;
+    text-align: center;
+    width:30%;
+    position: relative;
+    margin-right: 1.65%;
+    margin-left: 1.65%;
+}
+
+.validation-container {
+    padding: 25px;
+    display: flex;
+}
+
+.validation-element {
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.validation-text {
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 10px;
+    background-color: rgb(194, 194, 194);
+}
+
+@media (max-width: 768px) {
+
+    .reflection-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .sketches-container {
+        flex-direction: column;
+    }
+
+    .sketch-element {
+        margin: auto;
+        width: 90%;
+    }
+
+    .validation-container {
+        flex-direction: column;
+    }
+
+    .validation-element {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/*Button on the bottom right corner to slide back up*/
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(216,216,216);
+    color: #2D71B8;
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  #topBtn:hover {
+    background-color: rgb(194,194,194);
+  }
+
+.fa-chevron-up {
+    color: #2D71B8;
+}
